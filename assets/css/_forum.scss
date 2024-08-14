@@ -35,7 +35,8 @@ body {
 
         input[type="text"],
         input[type="email"],
-        textarea {
+        textarea,
+        select {
             width: 90%;
             padding: 10px;
             font-size: 16px;
@@ -50,6 +51,18 @@ body {
 
         textarea {
             resize: vertical;
+        }
+        select {
+            background-color: #f9f9f9;
+            color: #333;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjNDQ0NDQ0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NCA0NCI+PHBhdGggZD0iTTI5LjQyIDIxLjM5TDE5IDMxLjgxTDEwLjU4IDIxLjM5TDIxLjM5IDlMIDI5LjQyIDIxLjM5Wk0wIDBoNDR2NDRIMFYweiIvPjwvc3ZnPg==');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 12px;
+            cursor: pointer;
         }
     }
 

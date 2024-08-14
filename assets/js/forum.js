@@ -1,9 +1,5 @@
 
 
-
-
-
-
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -11,6 +7,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         firstName: document.getElementById("firstName").value,
         lastName: document.getElementById("lastName").value,
         email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,  // Capture the phone number
+        service: document.getElementById("service").value,
         message: document.getElementById("message").value
     }
 
@@ -22,6 +20,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         document.getElementById("firstName").value = "";
         document.getElementById("lastName").value = "";
         document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";  // Clear the phone number input
+        document.getElementById("service").value = "";
         document.getElementById("message").value = "";
         document.getElementById("form-feedback").innerHTML = "<p style='color: green;'>Your message was sent successfully!</p>";
     })

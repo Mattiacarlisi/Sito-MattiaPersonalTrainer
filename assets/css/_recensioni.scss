@@ -1,25 +1,29 @@
 /*recensioni  */
 
 
-
 .reviews-container {
     width: 100%;
+    
     overflow: hidden;
     background: #c3f2e3;
-    padding: 0;
+    padding: 0 !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    
 
     .reviews {
         display: flex;
         white-space: nowrap;
         animation: scroll-reviews 60s linear infinite;
-
+        padding: 0; // Rimuove il padding
+        margin: 0; // Rimuove eventuali margini
+        
         .review {
             display: inline-block;
-            padding: 0 30px;
+            padding: 20px !important;
             text-align: center;
             white-space: normal;
+            
 
             .stars {
                 color: gold; /* Colore oro */
