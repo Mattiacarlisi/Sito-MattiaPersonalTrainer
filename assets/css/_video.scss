@@ -1,0 +1,111 @@
+.main-video{
+    padding: 0px;
+
+
+   .video-section {
+        position: relative;
+        width: 100%;
+        height: 80vh; // Imposta l'altezza per coprire l'intero viewport
+        z-index: 999; // Posiziona il video sotto la navbar, ma sopra altri contenuti
+        margin-top: 80px;
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // Fa sì che il video copra l'intero contenitore
+            z-index: -1; // Assicura che il video sia dietro il contenuto
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4); // Overlay background color
+            padding: 20px;
+            border-radius: 10px; // Border radius
+            
+
+            h1 {
+                font-size: 2.5rem;
+                color: #fff; // Text color
+                margin: 0;
+            }
+        }
+
+        .cta-button {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #44a083; // CTA background color
+            color: #fff; // Text color
+            padding: 15px 30px;
+            border-radius: 10px; // Border radius
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: inline-block;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #36a074; // CTA hover background color
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .video-overlay h1 {
+        font-size: 2rem !important; /* Riduci la dimensione per schermi più piccoli */
+    }
+    .video-section {
+        height: 60vh !important; // Imposta l'altezza per coprire l'intero viewport
+        
+    }
+}
+
+/* Per schermi tra 992px e 768px */
+@media (max-width: 992px) {
+    .video-overlay h1 {
+        font-size: 1.75rem !important; /* Ulteriore riduzione */
+    }
+    .video-section {
+        height: 70vh !important; // Imposta l'altezza per coprire l'intero viewport
+        
+    }
+}
+
+/* Per schermi tra 768px e 576px */
+@media (max-width: 768px) {
+    .video-overlay h1 {
+        font-size: 1.25rem !important; /* Dimensione ridotta per tablet */
+    }
+    .video-section {
+        height: 60vh !important; // Imposta l'altezza per coprire l'intero viewport
+        
+    }
+}
+
+/* Per schermi fino a 576px */
+@media (max-width: 576px) {
+    .video-overlay h1 {
+        font-size: 1rem; /* Dimensione minima per smartphone piccoli */
+    }
+    .video-section {
+        height: 60vh !important; // Imposta l'altezza per coprire l'intero viewport
+        
+    }
+}
+
+@media (max-width: 428px) {
+    .video-overlay h1 {
+        font-size: 1.5rem; /* Riduce la dimensione del font per l'iPhone 12 */
+    }
+    .video-section {
+        height: 55vh !important; // Imposta l'altezza per coprire l'intero viewport
+        
+    }
+}

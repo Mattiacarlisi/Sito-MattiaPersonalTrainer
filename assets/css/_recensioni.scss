@@ -1,39 +1,41 @@
 /*recensioni  */
 
-
-.reviews-container {
-    width: 100%;
-    
-    overflow: hidden;
-    background: #c3f2e3;
-    padding: 0 !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    
-
-    .reviews {
-        display: flex;
-        white-space: nowrap;
-        animation: scroll-reviews 60s linear infinite;
-        padding: 0; // Rimuove il padding
-        margin: 0; // Rimuove eventuali margini
+.main-recensioni{
+    padding:0;
+    .reviews-container {
+        width: 100%;
         
-        .review {
-            display: inline-block;
-            padding: 20px !important;
-            text-align: center;
-            white-space: normal;
+        overflow: hidden;
+        background: #c3f2e3;
+        padding: 0 !important;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        
+
+        .reviews {
+            display: flex;
+            white-space: nowrap;
+            animation: scroll-reviews 60s linear infinite;
+            padding: 0; // Rimuove il padding
+            margin: 0; // Rimuove eventuali margini
             
+            .review {
+                display: inline-block;
+                padding: 20px !important;
+                text-align: center;
+                white-space: normal;
+                
 
-            .stars {
-                color: gold; /* Colore oro */
-                font-size: 24px;
-                margin-top: 5px;
-            }
+                .stars {
+                    color: gold; /* Colore oro */
+                    font-size: 24px;
+                    margin-top: 5px;
+                }
 
-            .reviewer {
-                margin-top: 10px;
-                font-style: italic;
+                .reviewer {
+                    margin-top: 10px;
+                    font-style: italic;
+                }
             }
         }
     }
