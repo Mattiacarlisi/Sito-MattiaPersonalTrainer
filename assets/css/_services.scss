@@ -1,0 +1,174 @@
+// Variabili
+
+$btn-color: #44a083;
+$btn-hover-color: #86c3fc;
+$card-padding: 20px;
+$card-border-radius: 10px;
+
+// Container principale per le card
+h2{
+    padding: 80px 0 0 0;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+.card-container {
+  display: grid;
+  gap: 20px;
+  margin: 20px ;
+  padding: 0 20px;
+  
+  
+  // Layout per schermo grande (4 card per riga)
+  grid-template-columns: repeat(4, 1fr);
+  
+  .card {
+    background-color: #c3f2e3;
+    border: none;
+    border-radius: $card-border-radius;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-content {
+      padding: $card-padding;
+      text-align: center;
+
+      .img-cards {
+        width: 100px;
+        height: auto;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        width: auto;
+      }
+
+      .btn-contact-3 {
+        color: white;
+        background-color: $btn-color;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: all .3s ease;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-flex; // Usato per gestire l'allineamento del testo
+        align-items: center; // Centrato verticalmente
+        justify-content: center; // Centrato orizzontalmente
+        text-align: center; // Assicura che il testo sia centrato
+        margin: 0 auto; // Centra orizzontalmente all'interno del contenitore
+        // Aggiunge uno spazio sufficiente sopra e sotto per assicurare che il bottone sia visibile
+        display: block;
+        
+
+        &:hover {
+          background-color: $btn-hover-color;
+        }
+
+        &:active {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+// Layout per schermi medi (max-width: 992px) - 3 card per riga
+@media (max-width: 992px) {
+    .card-container {
+      grid-template-columns: repeat(3, 1fr);
+      margin: 10px ;
+      padding: 0 10px;
+    }
+  }
+  
+  // Layout per schermi piccoli (max-width: 580px) - 2 card per riga
+  @media (max-width: 580px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 10px ;
+      padding: 0 10px;
+    }
+  
+    .card {
+      .card-content {
+        padding: 10px !important;
+  
+        .img-cards {
+          width: 70px; // Riduce la larghezza dell'immagine
+          height: auto;
+          margin-bottom: 10px;
+        }
+  
+        h3 {
+          font-size: 18px; // Riduce la dimensione del titolo
+        }
+  
+        p {
+          font-size: 14px !important; // Riduce la dimensione del testo del paragrafo
+        }
+  
+        .btn-contact-3 {
+          font-size: 16px !important; // Riduce la dimensione del testo del bottone
+          padding: 8px 16px; // Riduce il padding del bottone
+          
+          
+          text-align: center !important;
+        }
+      }
+    }
+  }
+  
+  // Layout per schermi molto piccoli (max-width: 400px) - 2 card per riga
+  @media (max-width: 400px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 10px ;
+      padding: 0 10px;
+    }
+  
+    .card {
+      .card-content {
+        padding: 10px !important;
+        
+        
+  
+        .img-cards {
+          width: 60px; // Riduce ulteriormente la larghezza dell'immagine
+          height: auto;
+          margin-bottom: 8px;
+        }
+  
+        h3 {
+          font-size: 16px; // Riduce ulteriormente la dimensione del titolo
+          
+        }
+  
+        p {
+          font-size: 12px !important; 
+        }
+  
+        .btn-contact-3 {
+          font-size: 14px; // Riduce ulteriormente la dimensione del testo del bottone
+          padding: 6px 12px; // Riduce ulteriormente il padding del bottone
+          display: inline-flex;
+         
+          text-align: center !important;
+          
+        }
+      }
+    }
+  }

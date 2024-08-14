@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Tag Open Graph -->
+    <meta property="og:title" content="Dott. Mattia Carlisi">
+    <meta property="og:description" content="Offro programmi di allenamento personalizzati e consulenze professionali sia nel mio studio che online. Prenota una sessione oggi stesso!">
+    <meta property="og:image" content="https://i.postimg.cc/tgpQD1gs/CARLISI-3-V7-A9684.jpg">
+    <meta property="og:url" content="https://mattiacarlisi.github.io/Progetto-HTML-e-CSS-di-Mattia-Carlisi/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+
+
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("-DDVi2ko2CwfN6Tqc");
+    })(); 
+    </script>
+
+    <!-- js -->
+    <script src="assets/js/forum.js" defer></script>
+    
+    
+
+    <title>Dott. Mattia Carlisi</title>
+
+</head>
+
+<body>
+     <!--header-->
+    <header>
+        <nav class="navbar">
+            <div class=" left-navbar">
+                <img class="logo" src="assets/img/logo-no-sfondo.png" alt="Logo dello studio fitness di Mattia Carlisi" >
+                
+                <p class="name">Dott. Mattia Carlisi</p>
+            </div>
+            <div class="right-navbar">
+                <ul class="links">
+                    <li><a  class= "links1" href="index.html">Home</a></li>
+                    <li><a  class= "links1" href="CV.html">CV</a></li>
+                    <li><a  class= "links1" href="#servizi">Servizi</a></li>
+                    <li><a  class= "links1" href="#links">Link</a></li>
+                </ul>
+
+                <button class="button-contact" >
+                    <a  class="button-contact-script" href="forum.html" target="_blank">
+                    Contattami</a>
+                </button>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="dropdown_menu">
+            <ul>
+                <li><a  class= "links_dropdown" href="index.html">Home</a></li>
+                <li><a  class= "links_dropdown" href="CV.html">CV</a>
+                <li><a  class= "links_dropdown" href="#servizi">Servizi</a></li>
+                <li><a  class= "links_dropdown" href="#links">Link</a>
+                <li class="button_dropdown"><button class="dropdown-button-contact" >
+                        <a  class="button-dropdown-contact-script" href="forum.html" target="_blank">
+                        Contattami</a>
+                    </button>
+                </li>
+            </ul>
+        
+        </nav>
+
+    </header>
+        <!--forum-->
+        <div class="container">
+            <h1>Contact Me</h1>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+            <div id="form-feedback"></div> 
+        </div>
+
+    <!--footer-->
+
+    <footer id="links" class="footer-style">
+
+        <div class="site-footer">
+            <img class="footer-logo" src="assets/img/logo-no-sfondo.png" alt="Logo dello studio fitness di Mattia Carlisi">
+
+            <div class="footer-name">Dott. Mattia Carlisi</div>
+
+            <div class="footer-list">
+                <ul>
+                    <li><a  class= "links1" href="index.html">Home</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-list">
+                <ul>
+                    <li><a  class= "links1" href="CV.html">CV</a>
+                </ul>
+            </div>
+
+            <div class="footer-list">
+                <ul>
+                    <li><a  class= "links1" href="#servizi">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-list">
+                <ul>
+                    <li><a  class= "links1" href="#links">Link</a>
+                </ul>
+            </div>
+        </div>
+    
+        <hr>
+        <div class="button-link">
+            <ul class="container-link">
+
+                <li><button class="button-socialmedia" >
+                    <a  class="button-connect-instagram" href="https://www.instagram.com/mattiacarlisi.pt/" target="_blank" rel="noopener">
+                        <img class="button-instagram" src="assets/img/instagram.png" alt="Profilo instagram di Mattia Carlisi">
+                    </a>
+                    </button>
+                </li>
+                <li>
+                    <button class="button-socialmedia" >
+                    <a  class="button-connect-facebook" href="https://it-it.facebook.com/mattia.carlisi/" target="_blank" rel="noreferrer">
+                        <img class="button-facebook" src="assets/img/facebook.png" alt="Profilo facebook di Mattia Carlisi">
+                    </a>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="button-socialmedia" >
+                    <a  class="button-connect-linkedin" href="https://it.linkedin.com/in/mattia-carlisi-095036239?trk=public_post_comment_actor-image" target="_blank" rel="noreferrer">
+                        <img class="button-linkedin" src="assets/img/linkedin.png" alt="Profilo linkedin di Mattia Carlisi">
+                    </a>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="button-socialmedia" >
+                    <a  class="button-connect-tiktok" href="https://www.tiktok.com/@mattiacarlisi_pt" target="_blank" rel="noreferrer">
+                        <img class="button-tiktok" src="assets/img/tik-tok.png" alt="Profilo tik-tok di Mattia Carlisi">
+                    </a>
+                    </button>
+                </li>
+
+                <li>
+                    <button class="button-socialmedia" >
+                    <a  class="button-connect-github" href="https://github.com/Mattiacarlisi" target="_blank" rel="noreferrer">
+                        <img class="button-github" src="assets/img/github.png" alt="Profilo github di Mattia Carlisi">
+                    </a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
+    <script src="assets/js/navbar.js" defer></script> 
+
+    
+</body>
+
+</html>

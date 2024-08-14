@@ -1,0 +1,25 @@
+$first-color: #B7CECE;
+$second-color:#6E7E85;
+$third-color:#BBBAC6;
+$special-color: #c3f2e3;
+$font-1: 'Roboto';
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+     overflow-x: hidden;
+      
+    
+}
+
+main{
+    background-color: $first-color;
+    margin-top: -20px;
+    font-family: $font-1;
+    
+    
+}
+

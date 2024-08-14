@@ -1,0 +1,200 @@
+/* this is a footer*/
+
+.footer-style{
+    background-color: $second-color;
+    
+}
+.site-footer {
+    background-color: $second-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 100%;
+    font-family: $font-1;
+    cursor: pointer;
+
+    .footer-logo {
+        width: 250px;
+        margin-left: 0px;
+    }
+
+    .footer-name {
+        color: white;
+        font-size: 20px;
+
+        &:hover {
+            color: yellow;
+        }
+    }
+
+    .footer-list {
+        font-size: 20px;
+        
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        a {
+            color: white; 
+            text-decoration: none;
+            
+
+            &:hover {
+                color: yellow;
+            }
+        }
+    }
+}
+
+
+hr{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 1px;
+    background-color: white;
+
+    
+    
+}
+
+
+
+.button-link{
+    background-color: $second-color;
+    height: 120px;
+    margin-top: 0px;
+    cursor: pointer;
+    width: 100%;
+    
+   
+    .container-link{
+        
+        list-style: none;
+        gap:30px;
+        display:flex;
+        justify-content: center;
+        
+    }
+    .button-socialmedia{
+        background-color: $second-color;
+        border:none;
+    }
+
+    .button-instagram{
+        width: 40px;
+       
+    }
+    .button-facebook{
+        width: 40px;
+       
+    }
+
+    .button-linkedin{
+        width: 40px;
+    }
+
+    .button-tiktok{
+        width: 40px;
+    }
+
+    .button-github{
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .site-footer {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+
+        .footer-name {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 10px;
+            margin-left: 0; 
+        }
+
+        .footer-list {
+            font-size: 18px;
+            margin-bottom: 5px;
+            margin: 0;
+
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+
+            li {
+                margin-top: 10px;
+            }
+
+            .footer-list-one {
+                color: white;
+                list-style: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-footer {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+
+        .footer-name {
+            color: white;
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-top: -20px;
+        }
+
+        .footer-list {
+            font-size: 16px;
+            margin-bottom: 5px;
+            margin: 0;
+
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+
+            li {
+                margin-top: 5px; 
+            }
+
+            .footer-list-one {
+                color: white;
+                list-style: none;
+            }
+        }
+    }
+
+    .button-link {
+        .container-link {
+            list-style: none;
+            gap: 10px; /* Aggiustato per più spazio */
+            display: flex;
+            justify-content: center;
+
+            .button-instagram,
+            .button-facebook,
+            .button-linkedin,
+            .button-tiktok,
+            .button-github {
+                width: 30px;
+            }
+        }
+    }
+}
