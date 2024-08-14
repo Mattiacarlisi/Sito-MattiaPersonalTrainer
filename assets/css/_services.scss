@@ -35,6 +35,28 @@ h2{
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
+    .promotion-icon {
+      
+      top: 10px;
+      left: 10px;
+      display: flex;
+      align-items: center;
+      z-index: 10;
+
+      img {
+          width: 40px;
+          height: 40px;
+      }
+
+      .offer-text {
+          font-size: 14px;
+          color: #ff0000; /* Colore rosso per evidenziare il testo */
+          font-weight: bold;
+          margin-left: 8px; /* Spazio tra l'icona e il testo */
+      }
+  }
+
+
     .card-content {
       padding: $card-padding;
       text-align: center;
@@ -55,6 +77,25 @@ h2{
         margin-bottom: 20px;
         width: auto;
       }
+
+      
+
+      .pricing {
+        margin-bottom: 15px;
+        
+        .original-price {
+            font-size: 18px;
+            color: #888; /* Colore grigio per il prezzo originale */
+            text-decoration: line-through; /* Barrato */
+            margin-right: 10px; /* Spazio tra i prezzi */
+        }
+
+        .discounted-price {
+            font-size: 24px;
+            color: #44a083; /* Colore verde per il prezzo scontato */
+            font-weight: bold;
+        }
+    }
 
       .btn-contact-3 {
         color: white;

@@ -214,6 +214,23 @@ h2 {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+.card-container .card .promotion-icon {
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.card-container .card .promotion-icon img {
+  width: 40px;
+  height: 40px;
+}
+.card-container .card .promotion-icon .offer-text {
+  font-size: 14px;
+  color: #ff0000; /* Colore rosso per evidenziare il testo */
+  font-weight: bold;
+  margin-left: 8px; /* Spazio tra l'icona e il testo */
+}
 .card-container .card .card-content {
   padding: 20px;
   text-align: center;
@@ -231,6 +248,20 @@ h2 {
   font-size: 16px;
   margin-bottom: 20px;
   width: auto;
+}
+.card-container .card .card-content .pricing {
+  margin-bottom: 15px;
+}
+.card-container .card .card-content .pricing .original-price {
+  font-size: 18px;
+  color: #888; /* Colore grigio per il prezzo originale */
+  text-decoration: line-through; /* Barrato */
+  margin-right: 10px; /* Spazio tra i prezzi */
+}
+.card-container .card .card-content .pricing .discounted-price {
+  font-size: 24px;
+  color: #44a083; /* Colore verde per il prezzo scontato */
+  font-weight: bold;
 }
 .card-container .card .card-content .btn-contact-3 {
   color: white;
