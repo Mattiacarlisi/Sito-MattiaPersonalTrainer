@@ -776,6 +776,6 @@ main {
     font-size: 1.5rem; /* Riduce la dimensione del font per l'iPhone 12 */
   }
   .video-section {
-    height: 55vh !important;
+    height: 60vh !important;
   }
 }/*# sourceMappingURL=styles.css.map */
