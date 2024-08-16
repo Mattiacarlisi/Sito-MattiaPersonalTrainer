@@ -88,8 +88,8 @@ header{
                 font-weight: bold;
                 height: 60px;
                 border: none;
-                background-color: #c3f2e3;
-                color: black !important;
+                background-color:  $btn-hover-color;
+                
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -109,7 +109,7 @@ header{
                 .button-contact-script{
                     list-style:none;
                     text-decoration: none;
-                    color: black;
+                    color: white;
                 }     
             }
     
@@ -164,7 +164,7 @@ header{
             width: 150px;
             height: 60px;
             border: none;
-            background: $special-color;
+            background-color:  $btn-hover-color;
             
             display: flex;
             align-items: center;
@@ -188,7 +188,7 @@ header{
                 list-style: none;
                 text-decoration: none;
                 font-weight: bold;
-                color: black;
+                color: white;
                 text-align: center;
                 
                 

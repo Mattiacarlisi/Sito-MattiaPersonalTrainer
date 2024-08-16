@@ -77,8 +77,7 @@ header .navbar .right-navbar .button-contact {
   font-weight: bold;
   height: 60px;
   border: none;
-  background-color: #c3f2e3;
-  color: black !important;
+  background-color: #86c3fc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +93,7 @@ header .navbar .right-navbar .button-contact:active {
 header .navbar .right-navbar .button-contact .button-contact-script {
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 header .navbar .right-navbar .toggle_btn {
   display: none;
@@ -133,7 +132,7 @@ header .dropdown_menu .dropdown-button-contact {
   width: 150px;
   height: 60px;
   border: none;
-  background: #c3f2e3;
+  background-color: #86c3fc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +151,7 @@ header .dropdown_menu .dropdown-button-contact .button-dropdown-contact-script {
   list-style: none;
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: white;
   text-align: center;
 }
 
@@ -787,7 +786,7 @@ main {
   transition: background-color 0.3s;
 }
 .main-video .video-section .cta-button:hover {
-  background-color: #36a074;
+  background-color: #86c3fc;
 }
 
 @media (max-width: 1200px) {
