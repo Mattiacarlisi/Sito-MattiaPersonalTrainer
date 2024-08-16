@@ -234,6 +234,8 @@ h2 {
 .card-container .card .card-content {
   padding: 20px;
   text-align: center;
+  /* aggiungo per il bottone*/
+  /* fine */
 }
 .card-container .card .card-content .img-cards {
   width: 100px;
@@ -248,6 +250,27 @@ h2 {
   font-size: 16px;
   margin-bottom: 20px;
   width: auto;
+}
+.card-container .card .card-content .btn-more-info {
+  color: white;
+  background-color: #81c9b2;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0 0 10px 0;
+}
+.card-container .card .card-content .btn-more-info:hover {
+  background-color: #86c3fc;
+}
+.card-container .card .card-content .more-info {
+  display: none;
+  margin-top: 10px;
+}
+.card-container .card .card-content.expanded .more-info {
+  display: block;
 }
 .card-container .card .card-content .pricing {
   margin-bottom: 15px;

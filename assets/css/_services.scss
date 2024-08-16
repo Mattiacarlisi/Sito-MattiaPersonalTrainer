@@ -78,7 +78,34 @@ h2{
         width: auto;
       }
 
-      
+      /* aggiungo per il bottone*/      
+      .btn-more-info{
+        color: white;
+        background-color: lighten($btn-color, 20%);
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        transition: all .3s ease;
+        font-size: 18px;
+        
+        padding: 10px 20px;
+        margin: 0 0 10px 0;
+        &:hover {
+          background-color: $btn-hover-color;
+        }
+      }
+      .more-info {
+        display: none;
+        margin-top: 10px;
+      }
+
+      &.expanded {
+          .more-info {
+              display: block;
+          }
+      }
+
+      /* fine */ 
 
       .pricing {
         margin-bottom: 15px;
@@ -95,6 +122,7 @@ h2{
             color: #44a083; /* Colore verde per il prezzo scontato */
             font-weight: bold;
         }
+        
     }
 
       .btn-contact-3 {

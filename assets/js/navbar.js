@@ -1,4 +1,4 @@
-
+   // tasto navbar
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.querySelector('.toggle_btn');
     const dropdownMenu = document.querySelector('.dropdown_menu');
@@ -9,4 +9,5 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdownMenu.classList.toggle('active');
     });
   });
+  
   
