@@ -1,0 +1,71 @@
+#mappa {
+    text-align: center;
+    padding: 40px 20px; // Spazio interno per dare respiro alla sezione
+    background-color: #c3f2e3; // Colore di sfondo chiaro per separare la sezione dal resto del sito
+    border-radius: 15px; // Angoli arrotondati per una sensazione più morbida
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Leggera ombra per far risaltare la sezione
+    margin: 50px auto; // Spazio sopra e sotto la sezione
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333; // Colore scuro per il titolo
+      font-family: 'Arial', sans-serif; // Font moderno e leggibile
+      font-weight: bold;
+      text-transform: uppercase; // Titolo in maiuscolo per dare un effetto deciso
+    }
+  
+    p {
+      font-size: 1.2rem;
+      color: #666; // Colore più chiaro per il paragrafo
+      margin-bottom: 30px;
+      line-height: 1.6;
+      font-family: 'Verdana', sans-serif;
+    }
+  
+    #mappa-container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow: hidden; // Nasconde eventuali overflow
+  
+      iframe {
+        width: 100%;
+        height: 500px; // Imposta l'altezza di base
+        border: 0;
+        border-radius: 10px; // Arrotonda gli angoli della mappa
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Ombra per dare un effetto di profondità
+      }
+    }
+  
+    // Responsività per tablet
+    @media screen and (max-width: 768px) {
+      h2 {
+        font-size: 1.8rem;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+  
+      #mappa-container iframe {
+        height: 350px; // Riduce l'altezza per tablet
+      }
+    }
+  
+    // Responsività per smartphone
+    @media screen and (max-width: 480px) {
+      h2 {
+        font-size: 1.6rem;
+      }
+  
+      p {
+        font-size: 0.9rem;
+      }
+  
+      #mappa-container iframe {
+        height: 250px; // Riduce ulteriormente l'altezza per smartphone
+      }
+    }
+  }
+  
